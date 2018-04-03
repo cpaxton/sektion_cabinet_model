@@ -16,6 +16,13 @@
       </geometry>
       <material name="White" />
     </visual>
+
+    <collision name="sektion_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/sektion.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="drawer_top">
@@ -31,6 +38,12 @@
       </geometry>
       <material name="Grey" />
     </visual>
+    <collision name="drawer_top_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/drawer.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="drawer_handle_top">
@@ -46,6 +59,12 @@
       </geometry>
       <material name="White" />
     </visual>
+    <collision name="drawer_handle_top_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/drawer_handle.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="drawer_bottom">
@@ -61,6 +80,13 @@
       </geometry>
       <material name="Grey" />
     </visual>
+    <collision name="drawer_bottom_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/drawer.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="Grey" />
+    </collision>
   </link>
 
   <link name="drawer_handle_bottom">
@@ -76,6 +102,13 @@
       </geometry>
       <material name="White" />
     </visual>
+    <collision name="drawer_top_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/drawer_handle.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="White" />
+    </collision>
   </link>
 
   <link name="door_right_anchor_link" />
@@ -93,6 +126,13 @@
       </geometry>
       <material name="Grey" />
     </visual>
+    <collision name="door_right_collision">
+      <origin rpy="0  0  0" xyz="0  -0.184706  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/door_right.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="Grey" />
+    </collision>
   </link>
 
   <link name="door_right_nob_link">
@@ -106,8 +146,13 @@
       <geometry>
         <mesh filename="package://sektion_cabinet_model/meshes/door_right_nob.stl" scale="1.0 1.0 1.0"/>
       </geometry>
-      <material name="White" />
     </visual>
+    <collision name="door_right_nob_collision">
+      <origin rpy="0  0  0" xyz="0  -0.184706  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/door_right_nob.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="door_right" />
@@ -127,6 +172,12 @@
       </geometry>
       <material name="Grey" />
     </visual>
+    <collision name="door_left_collision">
+      <origin rpy="0  0  0" xyz="0  0.184706  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/door_left.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="door_left_nob_link">
@@ -142,6 +193,13 @@
       </geometry>
       <material name="White" />
     </visual>
+    <collision name="door_left_nob_collision">
+      <origin rpy="0  0  0" xyz="0  0.184706  0"/>
+      <geometry>
+        <mesh filename="package://sektion_cabinet_model/meshes/door_left_nob.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+ 
   </link>
 
   <link name="door_left" />
