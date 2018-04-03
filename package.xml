@@ -10,5 +10,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <export>
+    <gazebo_ros gazebo_model_path="${prefix}/urdf"/>
+    <gazebo_ros gazebo_media_path="${prefix}/urdf"/>
   </export>
 </package>
