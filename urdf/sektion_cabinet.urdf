@@ -23,6 +23,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/sektion.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="drawer_top">
@@ -44,6 +47,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/drawer.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="drawer_handle_top">
@@ -65,6 +71,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/drawer_handle.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="drawer_bottom">
@@ -87,6 +96,9 @@
       </geometry>
       <material name="Grey" />
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="drawer_handle_bottom">
@@ -109,6 +121,9 @@
       </geometry>
       <material name="White" />
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="door_right_anchor_link" >
@@ -145,6 +160,9 @@
       </geometry>
       <material name="Grey" />
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="door_right_nob_link">
@@ -165,6 +183,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/door_right_nob.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="door_right" />
@@ -202,6 +223,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/door_left.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="door_left_nob_link">
@@ -223,7 +247,9 @@
         <mesh filename="package://sektion_cabinet_model/meshes/door_left_nob.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
- 
+    <gazebo reference="link">
+      <selfCollide>false</selfCollide>
+    </gazebo>
   </link>
 
   <link name="door_left" />
@@ -325,5 +351,10 @@
     <axis xyz="1 0 0"/>
     <limit effort="1000.0" lower="0.0" upper="0.4" velocity="0.1"/>
   </joint>
+
+
+    <gazebo reference="robot">
+      <selfCollide>false</selfCollide>
+    </gazebo>
 
 </robot>
